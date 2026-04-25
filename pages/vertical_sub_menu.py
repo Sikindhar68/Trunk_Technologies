@@ -9,7 +9,7 @@ class vertical_sub_menu:
         self.vertical = VerticalPage(page)
 
         self.trading_locators=[
-        page.locator('(//a[@href="https://www.tranktechnologies.com/stock-trading-mobile-app-development-company-in-india"])[1]'),
+        page.locator('(//a[@href="https://www.tranktechnologies.com/stock-trading-mobile-app-development-company"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/paper-trading-app-development-company"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/cfd-trading-app-development-company"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/stock-trading-development-in-massachusetts"])[1]'),
@@ -18,7 +18,7 @@ class vertical_sub_menu:
         page.locator('(//a[@href="https://www.tranktechnologies.com/webportal-trading-development"])[1]')]
 
         self.retail_locators=[
-        page.locator('(//a[@href="https://www.tranktechnologies.com/ecommerce-web-development-company-in-india"])[1]'),
+        page.locator('(//a[@href="https://www.tranktechnologies.com/ecommerce-web-development-company"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/ecommerce-app-development"])[1]') ]
 
         self.healthcare_locators=[
@@ -27,18 +27,18 @@ class vertical_sub_menu:
 
         self.fintech_locators=[ 
         page.locator('(//a[@href="https://www.tranktechnologies.com/pos-software-development-company"])[1]'),
-        page.locator('(//a[@href="https://www.tranktechnologies.com/cryptocurrency-mobile-app-development-company-in-india"])[1]')]
+        page.locator('(//a[@href="https://www.tranktechnologies.com/cryptocurrency-mobile-app-development-company"])[1]')]
 
         self.customerapp_locators=[
         page.locator('(//a[@href="https://www.tranktechnologies.com/desktop-application-development-company"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/hrm-application-development-company"])[1]'),
-        page.locator('(//a[@href="https://www.tranktechnologies.com/travel-mobile-app-development-company-in-india"])[1]'),
+        page.locator('(//a[@href="https://www.tranktechnologies.com/travel-mobile-app-development-company"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/dating-app-development-company"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/usa/custom-crm-development-company-usa"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/custom-crm-development-company"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/erp-app-development-company"])[1]'),
         page.locator('(//a[@href="https://www.tranktechnologies.com/erp-app-development-company"])[1]'),
-        page.locator('(//a[@href="https://www.tranktechnologies.com/real-estate-mobile-app-development-company-in-india"])[1]')]
+        page.locator('(//a[@href="https://www.tranktechnologies.com/real-estate-mobile-app-development-company"])[1]')]
 
     def click_options(self,category_method,locators):
         for option in locators:

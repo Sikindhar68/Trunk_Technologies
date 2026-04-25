@@ -9,21 +9,21 @@ class Footer_page :
             page.locator('//a[text()="eCommerce Development"]')]
         
         self.dropdown1=page.locator('(//i[@class="fa fa-chevron-down text-red-2"])[1]')
-        self.dropdownoption1=page.locator('//a[@href="https://www.tranktechnologies.com/website-development-company-in-delhi-ncr"]')
+        self.dropdownoption1=page.locator('//a[@href="https://www.tranktechnologies.com/website-development-company"]')
 
         self.footer_likns2 =[
-            page.locator('//a[text()="Custom Web Portal Development"]'),
-            page.locator('//a[text()="UI UX Design"]'),
-            page.locator('//a[text()="Mobile App Design"]'),
-            page.locator('//a[text()="Responsive Web Design"]'),
-            page.locator('//a[text()="Brand Identity Design"]'),
-            page.locator('//a[text()="App Development"]'),
-            page.locator('//a[text()="iOS App Development"]'),
-            page.locator('//a[text()="Android App Development"]')]
+            page.locator('//a[text()="Custom Web Portal Development" and not(@target)]'),
+            page.locator('//a[text()="UI UX Design" and not(@target)]'),
+            page.locator('//a[text()="Mobile App Design" and not(@target)]'),
+            page.locator('//a[text()="Responsive Web Design" and not(@target)]'),
+            page.locator('//a[text()="Brand Identity Design" and not(@target)]'),
+            page.locator('//a[text()="App Development" and not(@target)]'),
+            page.locator('//a[text()="iOS App Development" and not(@target)]'),
+            page.locator('//a[text()="Android App Development" and not(@target)]')]
         
         self.dropdown2=page.locator('(//i[@class="fa fa-chevron-down text-red-2"])[2]')
-        self.dropdownoption2=page.locator('//a[text()="Android App Development Delhi"]')
-        self.dropdownoption3=page.locator('//a[text()="App Development Delhi"]')
+        self.dropdownoption2=page.locator('//a[text()="Android App Development" and @target="_blank"]')
+        self.dropdownoption3=page.locator('//a[text()="App Development" and @target="_blank"]')
 
         self.footer_likns3=[
             page.locator('//a[text()="Hybrid Mobile App Development"]'),
@@ -42,7 +42,7 @@ class Footer_page :
     def click_footer_links1(self):
         for link in self.footer_likns1:
             link.click()
-            self.page.wait_for_load_state("load")
+            self.page.wait_for_load_state("domcontentloaded")
             self.page.wait_for_timeout(2000)
             self.page.go_back()
             self.page.wait_for_timeout(1000)
@@ -60,7 +60,7 @@ class Footer_page :
     def click_footer_links2(self):
         for link in self.footer_likns2:
             link.click()
-            self.page.wait_for_load_state("load")
+            self.page.wait_for_load_state("domcontentloaded")
             self.page.wait_for_timeout(2000)
             self.page.go_back()
             self.page.wait_for_timeout(1000)
@@ -86,7 +86,7 @@ class Footer_page :
     def click_footer_links3(self):
         for link in self.footer_likns3:
             link.click()
-            self.page.wait_for_load_state("load")
+            self.page.wait_for_load_state("domcontentloaded")
             self.page.wait_for_timeout(2000)
             self.page.go_back()
             self.page.wait_for_timeout(1000)           
